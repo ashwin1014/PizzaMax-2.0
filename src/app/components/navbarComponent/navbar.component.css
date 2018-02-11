@@ -1,0 +1,87 @@
+nav {
+    background: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0%;
+}
+
+.brand-logo {
+    color: black
+}
+
+.img-wrap {
+    height: 5rem;
+    z-index: 9;
+    margin-top: 0.5em;
+    margin-right: 1em;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 360px) {
+    .img-wrap {
+        margin-right: 6.7em;
+        padding-left: 6rem;
+    }
+}
+
+#loginBtn {
+    margin-top: 1.7rem;
+}
+
+.colCustom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.areaRow {
+    margin-top: 5rem;
+}
+
+#backgroundImageContainer {
+    background: url('../../../images/headerBackground.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+}
+
+#btnOrder {
+    height: 3rem;
+}
+
+.card-panel {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    padding-bottom: 0.1px !important;
+    padding-top: 5px;
+}
+
+.headerRow {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    margin-top: 0px;
+}
+
+.translucentBlack {
+    background: rgba(0, 0, 0, 0.6)
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: red;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: red;
+}
+
+div span.thin {
+    font-size: 1.5rem;
+}

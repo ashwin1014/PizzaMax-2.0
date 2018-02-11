@@ -1,0 +1,39 @@
+<div id="backgroundImageContainer">
+    <nav class="transparent z-depth-0">
+        <div class="nav-wrapper container">
+            <a href="#!" class="brand-logo center"><img src="../../../images/pm-logo.png" alt="Pizza Max" class="img-wrap" onclick="window.location.reload()"></a>
+            <ul class="right">
+                <li>
+                    <button class="btn waves-effect waves-light red darken-1" type="submit" name="action" id="loginBtn">Login</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row areaRow">
+        <div class="col s2 m2 l2 xl2"></div>
+        <div class="col s8 m8 l8 xl8 ">
+            <div class="card-panel translucentBlack">
+                <div class="headerRow center-align">
+                    <span class="center-align white-text thin">Delivering you the best Pizzas across {{selectedValue}}</span>
+                </div>
+
+                <div class="row">
+                    <div class="col s12 m6 l6 padding0px">
+                        <select [(ngModel)]="selectedValue" name="area" class="browser-default center-align">                          
+                            <option value="" disabled selected>Choose your option</option>
+                            <option *ngFor="let area of areas">
+                                {{area.viewValue}}
+                            </option>
+                        </select>
+
+                    </div>
+                    <div class="col s12 m6 l6 padding0px">
+                        <button class="btn waves-effect waves-light width100per yellow darken-4" type="submit" id="btnOrder" name="action">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s2 m2 l2 xl2"></div>
+    </div>
+</div>
