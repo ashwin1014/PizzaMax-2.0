@@ -11,18 +11,18 @@ var NavbarComponent = /** @class */ (function () {
     function NavbarComponent() {
         this.selectedValue = "";
         this.areas = [
-            { value: "1", viewValue: "Munnar" },
-            { value: "2", viewValue: "Kottayam" },
-            { value: "3", viewValue: "Ettumanoor" },
-            { value: "4", viewValue: "Thekkady" },
-            { value: "5", viewValue: "Varkala" }
+            { value: '1', viewValue: 'Munnar' },
+            { value: '2', viewValue: 'Kottayam' },
+            { value: '3', viewValue: 'Ettumanoor' },
+            { value: '4', viewValue: 'Thekkady' },
+            { value: '5', viewValue: 'Varkala' }
         ];
     }
     NavbarComponent = __decorate([
         core_1.Component({
-            selector: "navbar",
+            selector: 'navbar',
             templateUrl: "app/components/navbarComponent/navbar.component.html",
-            styleUrls: ["app/components/navbarComponent/navbar.component.css"]
+            styleUrls: ['app/components/navbarComponent/navbar.component.css']
         })
     ], NavbarComponent);
     return NavbarComponent;

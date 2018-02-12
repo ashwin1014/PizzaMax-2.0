@@ -9,3 +9,7 @@
 .font-Bold {
     font-weight: bold;
 }
+
+.z-index9 {
+    z-index: 9 !important;
+}

@@ -1,5 +1,5 @@
 <div id="backgroundImageContainer">
-    <nav class="transparent z-depth-0">
+    <nav class="transparent z-depth-0 ">
         <div class="nav-wrapper container">
             <a href="#!" class="brand-logo center"><img src="../../../images/pm-logo.png" alt="Pizza Max" class="img-wrap" onclick="window.location.reload()"></a>
             <ul class="right">
@@ -10,14 +10,14 @@
         </div>
     </nav>
 
-    <div class="row areaRow">
+    <div class="row areaRow ">
         <div class="col s2 m2 l2 xl2"></div>
         <div class="col s8 m8 l8 xl8 ">
             <div class="card-panel translucentBlack">
                 <div class="headerRow center-align">
                     <span class="center-align white-text thin">Delivering you the best Pizzas across {{selectedValue==''?'Kerala':selectedValue}}</span>
                 </div>
-                <div class="row">
+                <div class="row marginBottom8p">
                     <div class="col s12 m6 l6 padding0px">
                         <select [(ngModel)]="selectedValue" name="area" class="browser-default" placeholder="Favorite food">
                         <option value=""  selected>Choose your location</option> 
