@@ -4,7 +4,7 @@
             <a href="#!" class="brand-logo center"><img src="../../../images/pm-logo.png" alt="Pizza Max" class="img-wrap" onclick="window.location.reload()"></a>
             <ul class="right">
                 <li>
-                    <button class="btn waves-effect waves-light red darken-1" type="submit" name="action" id="loginBtn">Login</button>
+                    <a class="btn waves-effect waves-light red darken-1" name="action" id="loginBtn" href="#modal1">Login</a>
                 </li>
             </ul>
         </div>
@@ -20,7 +20,8 @@
                 <div class="row marginBottom8p">
                     <div class="col s12 m6 l6 padding0px">
                         <select [(ngModel)]="selectedValue" name="area" class="browser-default" placeholder="Favorite food">
-                        <option value=""  selected hidden disabled>Choose your location</option>
+                        <option value=""  selected disabled hidden>Choose your location</option> 
+
                         <option *ngFor="let area of areas" [value]="area.viewValue">
                                 {{area.viewValue}}
                             </option>
@@ -33,5 +34,16 @@
             </div>
         </div>
         <div class="col s2 m2 l2 xl2"></div>
+    </div>
+</div>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
     </div>
 </div>

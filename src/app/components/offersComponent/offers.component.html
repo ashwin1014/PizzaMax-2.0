@@ -1,0 +1,17 @@
+<div class="container">
+    <h4 class="center-align">Offers</h4>
+    <div class="row">
+        <div class="col s12 m4 l4 xl4" *ngFor="let offer of offers">
+            <div class="card">
+                <div class="card-image">
+                    <img src={{offer.ImagePath}} />
+                    <span class="card-title">{{offer.title}}</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+                <div class="card-content">
+                    <p>{{offer.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

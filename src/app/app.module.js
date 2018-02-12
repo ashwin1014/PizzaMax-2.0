@@ -10,6 +10,8 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
 var navbar_component_1 = require("./components/navbarComponent/navbar.component");
+var offers_component_1 = require("./components/offersComponent/offers.component");
+var footer_component_1 = require("./components/footerComponent/footer.component");
 var forms_1 = require("@angular/forms");
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -17,7 +19,7 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
-            declarations: [app_component_1.AppComponent, navbar_component_1.NavbarComponent],
+            declarations: [app_component_1.AppComponent, navbar_component_1.NavbarComponent, offers_component_1.OfferComponent, footer_component_1.FooterComponent],
             bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);

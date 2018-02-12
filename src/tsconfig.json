@@ -8,6 +8,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "lib": [ "es2015", "dom" ],
+    "types": ["jquery"],
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true
   }
