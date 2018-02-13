@@ -7,6 +7,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Firebase Scripts-->
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+    <script>
+        var config = {
+            apiKey: "AIzaSyBZ9YYMykjw8i1vpSBcY7qcQQJvGHOZYYw",
+            authDomain: "pizzamax-website-data.firebaseapp.com",
+            databaseURL: "https://pizzamax-website-data.firebaseio.com",
+            projectId: "pizzamax-website-data",
+            storageBucket: "pizzamax-website-data.appspot.com",
+            messagingSenderId: "219085986576"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase-firestore.js"></script>
+
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="node_modules\materialize-css\dist\css\materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">

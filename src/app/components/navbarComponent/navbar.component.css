@@ -1,6 +1,7 @@
 nav {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.2);
     margin-bottom: 0%;
+    height: 70px !important;
 }
 
 .brand-logo {
@@ -8,9 +9,9 @@ nav {
 }
 
 .img-wrap {
-    height: 5rem;
+    height: 5.5rem;
     z-index: 9;
-    margin-top: 0.5em;
+    margin-top: 0.3em;
     margin-right: 1em;
     object-fit: cover;
 }
@@ -41,7 +42,6 @@ nav {
     background-color: black;
     background-size: cover;
     width: 100%;
-
 }
 
 #btnOrder {

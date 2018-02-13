@@ -16,7 +16,8 @@ export class NavbarComponent {
     { value: '4', viewValue: 'Thekkady' },
     { value: '5', viewValue: 'Varkala' }
   ];
-  constructor() {
-    $('.modal').modal();
-  }
+  ngOnInit() {
+     $('.modal').modal();
+ }
+
 }
