@@ -17,3 +17,19 @@
 .z-index9 {
     z-index: 9 !important;
 }
+
+.text-large {
+    font-size: 1.4rem;
+}
+
+.text-large-2 {
+    font-size: 1.6rem;
+}
+
+.padding10px  {
+  padding: 10px!important;
+}
+
+.margin10px  {
+  margin: 10px!important;
+}
