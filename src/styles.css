@@ -41,3 +41,11 @@
 .not-allowed {
     cursor: not-allowed;
 }
+
+.marginleft10px {
+    margin-left: 10px;
+}
+
+.marginright10px {
+    margin-right: 10px;
+}
