@@ -8,7 +8,8 @@ declare var $: any; // for jQuery
   styleUrls: ['app/components/navbarComponent/navbar.component.css']
 })
 export class NavbarComponent {
-  selectedValue: string = ``;
+ isDisabled: boolean = true;
+ selectedValue: string = ``;
   areas = [
     { value: '1', viewValue: 'Munnar' },
     { value: '2', viewValue: 'Kottayam' },

@@ -1,10 +1,17 @@
-.footer {
-    /* position: fixed; */
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: gainsboro;
-    color: black;
-    text-align: center;
-    margin-bottom: -15px;
+ul#social li {
+    display: inline;
+}
+
+.fab {
+    padding-right: 5px;
+    padding-left: 5px
+}
+
+ul#featureImage li:nth-child(1),
+ul#featureImage li:nth-child(2) {
+    padding-bottom: 5px;
+}
+
+.fa-utensils {
+    margin-left: 5px;
 }

@@ -2,8 +2,8 @@
     padding: 0px !important;
 }
 
-.marginbottom0px  {
-  margin-bottom: 0px !important;
+.marginbottom0px {
+    margin-bottom: 0px !important;
 }
 
 .width100per {
@@ -26,10 +26,18 @@
     font-size: 1.6rem;
 }
 
-.padding10px  {
-  padding: 10px!important;
+.padding10px {
+    padding: 10px!important;
 }
 
-.margin10px  {
-  margin: 10px!important;
+.margin10px {
+    margin: 10px!important;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.not-allowed {
+    cursor: not-allowed;
 }

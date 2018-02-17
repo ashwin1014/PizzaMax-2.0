@@ -9,6 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var NavbarComponent = /** @class */ (function () {
     function NavbarComponent() {
+        this.isDisabled = true;
         this.selectedValue = "";
         this.areas = [
             { value: '1', viewValue: 'Munnar' },
