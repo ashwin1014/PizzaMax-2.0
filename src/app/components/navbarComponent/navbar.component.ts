@@ -8,8 +8,7 @@ declare var $: any; // for jQuery
   styleUrls: ['app/components/navbarComponent/navbar.component.css']
 })
 export class NavbarComponent {
- isDisabled: boolean = true;
- selectedValue: string = ``;
+  selectedValue: string = ``;
   areas = [
     { value: '1', viewValue: 'Munnar' },
     { value: '2', viewValue: 'Kottayam' },
@@ -17,8 +16,12 @@ export class NavbarComponent {
     { value: '4', viewValue: 'Thekkady' },
     { value: '5', viewValue: 'Varkala' }
   ];
+  onChange() {
+   document.getElementById('btnSubmitDiv').classList.remove('notAllowed');
+   document.getElementById('btnOrder').classList.remove('pointerNone');
+  // document.getElementById("btnOrder").removeAttribute("disabled");
+  }
   ngOnInit() {
-     $('.modal').modal();
- }
-
+    $('.modal').modal();
+  }
 }

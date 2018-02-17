@@ -38,10 +38,13 @@
     display: inline;
 }
 
-.not-allowed {
+.notAllowed {
     cursor: not-allowed;
 }
 
+.pointerNone {
+    pointer-events: none;
+}
 .marginleft10px {
     margin-left: 10px;
 }

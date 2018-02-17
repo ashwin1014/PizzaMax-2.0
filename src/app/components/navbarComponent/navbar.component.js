@@ -9,7 +9,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var NavbarComponent = /** @class */ (function () {
     function NavbarComponent() {
-        this.isDisabled = true;
         this.selectedValue = "";
         this.areas = [
             { value: '1', viewValue: 'Munnar' },
@@ -19,6 +18,11 @@ var NavbarComponent = /** @class */ (function () {
             { value: '5', viewValue: 'Varkala' }
         ];
     }
+    NavbarComponent.prototype.onChange = function () {
+        document.getElementById('btnSubmitDiv').classList.remove('notAllowed');
+        document.getElementById('btnOrder').classList.remove('pointerNone');
+        // document.getElementById("btnOrder").removeAttribute("disabled");
+    };
     NavbarComponent.prototype.ngOnInit = function () {
         $('.modal').modal();
     };
