@@ -52,3 +52,20 @@
 .marginright10px {
     margin-right: 10px;
 }
+
+.marginleft40px {
+    margin-left: 40px!important;
+}
+
+.marginright40px {
+    margin-right: 40px!important;
+}
+
+.absolute-position  {
+    position: absolute;
+}
+
+.padding30pxleftright {
+  padding-left: 30px;
+  padding-right: 30px;
+}
