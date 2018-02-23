@@ -1,5 +1,7 @@
 {
   "rules": {
+    "prefer-const": true,
+    "extends": ["tslint-angular", "angular-tslint-rules"],
     "class-name": true,
     "comment-format": [
       true,

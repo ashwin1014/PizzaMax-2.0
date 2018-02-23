@@ -1,7 +1,7 @@
 <div id="backgroundImageContainer">
     <nav class="z-depth-0 ">
         <div class="nav-wrapper">
-            <a href="#!" class="brand-logo left marginleft10px"><img src="../../../images/pm-logo.png" alt="Pizza Max" class="img-wrap" onclick="window.location.reload()"></a>
+            <a href="" class="brand-logo left marginleft10px"><img src="../../../images/pm-logo.png" alt="Pizza Max" class="img-wrap" onclick="window.location.reload()"></a>
             <ul class="right">
                 <li>
                     <button class="btn waves-effect waves-light red darken-1 modal-trigger marginright10px" name="action" id="loginBtn" data-target="modal1">Login</button>
@@ -25,8 +25,10 @@
                             </option>
                         </select>
                     </div>
+
                     <div class="col s12 m6 l6 padding0px notAllowed" id="btnSubmitDiv">
-                        <button class="btn waves-effect waves-light width100per yellow darken-4 pointerNone" type="submit" id="btnOrder" name="action">Show Menu</button>
+                        <!-- <button class="btn waves-effect waves-light width100per yellow darken-4 pointerNone" type="submit" id="btnOrder" name="action" (click)="showMenu">Show Menu</button> -->
+                        <a class="btn waves-effect waves-light width100per yellow darken-4 pointerNone paddingTop5px" type="submit" id="btnOrder" name="action" [routerLink]="['/menu', selectedValue]">Show Menu</a>
                     </div>
                 </div>
             </div>

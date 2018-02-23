@@ -1,21 +1,21 @@
 .padding0px {
-    padding: 0px !important;
+    padding: 0!important;
 }
 
 .marginbottom0px {
-    margin-bottom: 0px !important;
+    margin-bottom: 0!important;
 }
 
 .width100per {
-    width: 100%
+    width: 100%;
 }
 
 .font-Bold {
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .z-index9 {
-    z-index: 9 !important;
+    z-index: 9!important;
 }
 
 .text-large {
@@ -45,6 +45,7 @@
 .pointerNone {
     pointer-events: none;
 }
+
 .marginleft10px {
     margin-left: 10px;
 }
@@ -61,11 +62,15 @@
     margin-right: 40px!important;
 }
 
-.absolute-position  {
+.absolute-position {
     position: absolute;
 }
 
 .padding30pxleftright {
-  padding-left: 30px;
-  padding-right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.paddingTop5px {
+    padding-top: 5px;
 }
