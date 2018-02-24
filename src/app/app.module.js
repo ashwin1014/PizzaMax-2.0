@@ -18,6 +18,7 @@ var home_component_1 = require("./components/homeComponent/home.component");
 var pageNotFound_component_1 = require("./pageNotFound.component");
 var router_1 = require("@angular/router");
 var http_1 = require("@angular/http");
+var menu_service_1 = require("./components/menuComponent/menu.service");
 var appRoutes = [
     { path: "", component: home_component_1.HomeComponent },
     { path: "menu/:location", component: menu_component_1.MenuComponent },
@@ -44,7 +45,8 @@ var AppModule = /** @class */ (function () {
                 menu_component_1.MenuComponent,
                 pageNotFound_component_1.PageNotFoundComponent
             ],
-            bootstrap: [app_component_1.AppComponent]
+            bootstrap: [app_component_1.AppComponent],
+            providers: [menu_service_1.MenuService]
         })
     ], AppModule);
     return AppModule;

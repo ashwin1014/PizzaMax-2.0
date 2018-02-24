@@ -74,3 +74,16 @@
 .paddingTop5px {
     padding-top: 5px;
 }
+
+menu {
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.logo-wrap {
+    height: 5.5rem;
+    z-index: 9;
+    margin-top: .3em;
+    object-fit: cover;
+}

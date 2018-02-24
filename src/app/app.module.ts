@@ -9,7 +9,8 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './components/homeComponent/home.component'
 import { PageNotFoundComponent} from './pageNotFound.component'
 import { Routes, RouterModule,} from '@angular/router';
-import {HttpModule} from '@angular/http';
+import { HttpModule } from '@angular/http';
+import { MenuService } from './components/menuComponent/menu.service';
 
 const appRoutes: Routes = [
   { path: "", component: HomeComponent },
@@ -34,6 +35,7 @@ const appRoutes: Routes = [
     MenuComponent,
     PageNotFoundComponent
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [MenuService]
 })
 export class AppModule {}

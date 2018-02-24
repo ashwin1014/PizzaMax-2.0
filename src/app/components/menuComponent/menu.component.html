@@ -1,10 +1,45 @@
 <nav>
     <div class="nav-wrapper">
-        <a href="" class="brand-logo" (click)="backToHome()">Logo</a>
+        <a href="" class="brand-logo left marginleft10px"><img src="../../../images/pm-logo.png" alt="Pizza Max" class="logo-wrap" (click)="backToHome()"></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><i class="large material-icons">add_shopping_cart</i><span class="new badge">4</span></li>
         </ul>
     </div>
 </nav>
+<div class="container">
+    <!-- <h5>Welcome to </div>Pizzamax {{location}}</h5> -->
+    <a href="" (click)="backToHome()">Back Home</a>
 
-Welcome to Pizzamax {{location}}
+
+    <table class="highlight" *ngIf="menu">
+        <thead>
+            <tr>
+                <th>
+                    <h5>Welcome to Pizzamax</h5>
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Alvin</td>
+                <td>{{menu.code}}</td>
+
+            </tr>
+            <tr>
+                <td>Alan</td>
+                <td>{{menu.name}}</td>
+
+            </tr>
+            <tr>
+                <td>Jonathan</td>
+                <td>{{menu.annualSalary}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+
+    <div *ngIf="!menu" class="container card-panel grey lighten-5 z-depth-1">
+        {{statusMessage}}
+    </div>
+</div>

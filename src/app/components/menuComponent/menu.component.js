@@ -12,23 +12,46 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var router_2 = require("@angular/router");
+var menu_service_1 = require("./menu.service");
 var MenuComponent = /** @class */ (function () {
-    function MenuComponent(route, router) {
+    function MenuComponent(route, router, _menuService) {
         this.route = route;
         this.router = router;
+        this._menuService = _menuService;
+        this.statusMessage = "Loading data. Please wait";
     }
     MenuComponent.prototype.ngOnInit = function () {
+        // this.route.params.subscribe(params => (this.location = params.location));
+        //   this._menuService.getEmployees()
+        //                    .subscribe((employeeData)=> this.menu = employeeData,
+        //                   (error)=>{
+        //                     this.statusMessage = 'Problem with the service. Please try again later!';
+        //                     console.error(error);
+        //                   });
+        // }
         var _this = this;
-        this.route.params.subscribe(function (params) { return (_this.location = params.location); });
+        var pizzaLocation = this.route.snapshot.params["location"];
+        this._menuService.getMenuByLocation(pizzaLocation).subscribe(function (employeeData) {
+            if (employeeData == null) {
+                _this.statusMessage = 'Sorry, We do not deliver at this location as of now,';
+            }
+            else {
+                _this.menu = employeeData;
+            }
+        }, function (error) {
+            _this.statusMessage =
+                "Problem with the service. Please try again later!";
+            console.error(error);
+        });
     };
     MenuComponent.prototype.backToHome = function () {
-        this.router.navigate(['']);
+        this.router.navigate([""]);
     };
     MenuComponent = __decorate([
         core_1.Component({
             selector: "menu",
             templateUrl: "app/components/menuComponent/menu.component.html",
-            styleUrls: ["app/components/menuComponent/menu.component.css"]
+            styleUrls: ["app/components/menuComponent/menu.component.css"],
         })
         // export class MenuComponent {
         //   constructor(private route: ActivatedRoute) {
@@ -36,7 +59,9 @@ var MenuComponent = /** @class */ (function () {
         //   }
         // }
         ,
-        __metadata("design:paramtypes", [router_1.ActivatedRoute, router_2.Router])
+        __metadata("design:paramtypes", [router_1.ActivatedRoute,
+            router_2.Router,
+            menu_service_1.MenuService])
     ], MenuComponent);
     return MenuComponent;
 }());

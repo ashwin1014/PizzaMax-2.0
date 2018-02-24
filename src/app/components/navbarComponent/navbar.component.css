@@ -8,13 +8,6 @@ nav {
     color: #000;
 }
 
-.img-wrap {
-    height: 5.5rem;
-    z-index: 9;
-    margin-top: .3em;
-    object-fit: cover;
-}
-
 #loginBtn {
     margin-top: 1.7rem;
 }
