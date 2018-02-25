@@ -19,12 +19,12 @@ var MenuService = /** @class */ (function () {
     function MenuService(_http) {
         this._http = _http;
     }
-    MenuService.prototype.getEmployees = function () {
-        return this._http
-            .get("http://localhost:59637/api/employees")
-            .map(function (response) { return response.json(); })
-            .catch(this.handleError);
-    };
+    // getEmployees(): Observable<IEmployee[]> {
+    //   return this._http
+    //     .get("http://localhost:59637/api/employees")
+    //     .map((response: Response) => <IEmployee[]>response.json())
+    //     .catch(this.handleError);
+    // }
     MenuService.prototype.getMenuByLocation = function (menuLocation) {
         return this._http
             .get("http://localhost:59637/api/employees/" + menuLocation)

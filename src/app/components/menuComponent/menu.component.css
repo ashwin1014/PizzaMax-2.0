@@ -1,0 +1,92 @@
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%
+}
+
+nav {
+    margin-bottom: 0;
+    height: 70px!important;
+}
+
+.dottedBtn {
+    border: 1px dashed #FFF;
+    color: #FFF;
+    padding: 5px;
+}
+
+.fa-map-marker {
+    font-size: 14px
+}
+
+.notification-badge {
+    position: relative;
+    right: 3.7em;
+    top: 15px;
+    color: #ffffff;
+    background-color: #2eabff;
+    border-radius: 40px;
+    padding: 3px 20px;
+}
+
+small {
+    font-size: 1rem;
+}
+
+.fa-user {
+    font-size: 1.4rem;
+    margin-top: 5px;
+    white-space: nowrap
+}
+
+@media only screen and (max-width:600px) {
+    .fa-user {
+        margin-top: 34px;
+        white-space: nowrap;
+        margin-left: -3rem;
+    }
+}
+
+.container {
+    display: flex;
+    position: absolute;
+}
+
+#menuContainer {
+    right: 0px;
+    left: 0px;
+}
+
+#mobileBottomNav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f53d3d;
+    height: 50px;
+    z-index: 9;
+}
+
+#mobileBottomLocationNav {
+    position: fixed;
+    bottom: 25px;
+    width: 100%;
+    background-color: #ee6e73;
+    color: white;
+    height: 50px;
+    z-index: 9;
+}
+
+div#mobileBottomNav i.fa-shopping-cart {
+    color: white;
+}
+
+.top10px {
+    top: 10px;
+}
+
+div#mobileBottomNav div.container i.fa-shopping-cart {
+    margin-left: 3rem;
+    margin-top: 0.7rem;
+}

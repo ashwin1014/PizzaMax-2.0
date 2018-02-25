@@ -1,3 +1,9 @@
+/* html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+} */
+
 .padding0px {
     padding: 0!important;
 }
@@ -86,4 +92,8 @@ menu {
     z-index: 9;
     margin-top: .3em;
     object-fit: cover;
+}
+
+.marginAuto {
+    margin: auto;
 }

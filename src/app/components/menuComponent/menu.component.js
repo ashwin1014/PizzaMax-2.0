@@ -18,10 +18,22 @@ var MenuComponent = /** @class */ (function () {
         this.route = route;
         this.router = router;
         this._menuService = _menuService;
+        this.cartCost = 5;
+        this.userName = "User Name";
         this.statusMessage = "Loading data. Please wait";
+        this.windowWidth = window.innerWidth;
     }
+    //initial values, The window object may still be undefined during this hook, let me know if that's the case and we'll figure out a better hook for the initial value
+    MenuComponent.prototype.ngAfterViewInit = function () {
+        this.windowWidth = window.innerWidth;
+    };
+    //if screen size changes it'll update
+    MenuComponent.prototype.resize = function (event) {
+        this.windowWidth = window.innerWidth;
+    };
     MenuComponent.prototype.ngOnInit = function () {
-        // this.route.params.subscribe(params => (this.location = params.location));
+        var _this = this;
+        this.route.params.subscribe(function (params) { return (_this.location = params.location); });
         //   this._menuService.getEmployees()
         //                    .subscribe((employeeData)=> this.menu = employeeData,
         //                   (error)=>{
@@ -29,11 +41,11 @@ var MenuComponent = /** @class */ (function () {
         //                     console.error(error);
         //                   });
         // }
-        var _this = this;
         var pizzaLocation = this.route.snapshot.params["location"];
         this._menuService.getMenuByLocation(pizzaLocation).subscribe(function (employeeData) {
             if (employeeData == null) {
-                _this.statusMessage = 'Sorry, We do not deliver at this location as of now,';
+                _this.statusMessage =
+                    "Sorry, We do not deliver at this location as of now,";
             }
             else {
                 _this.menu = employeeData;
@@ -47,11 +59,17 @@ var MenuComponent = /** @class */ (function () {
     MenuComponent.prototype.backToHome = function () {
         this.router.navigate([""]);
     };
+    __decorate([
+        core_1.HostListener("window:resize", ["$event"]),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", [Object]),
+        __metadata("design:returntype", void 0)
+    ], MenuComponent.prototype, "resize", null);
     MenuComponent = __decorate([
         core_1.Component({
             selector: "menu",
             templateUrl: "app/components/menuComponent/menu.component.html",
-            styleUrls: ["app/components/menuComponent/menu.component.css"],
+            styleUrls: ["app/components/menuComponent/menu.component.css"]
         })
         // export class MenuComponent {
         //   constructor(private route: ActivatedRoute) {
