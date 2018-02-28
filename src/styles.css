@@ -1,9 +1,3 @@
-/* html,
-body {
-    max-width: 100%;
-    overflow-x: hidden;
-} */
-
 .padding0px {
     padding: 0!important;
 }
@@ -14,6 +8,10 @@ body {
 
 .width100per {
     width: 100%;
+}
+
+.height100per {
+    height: 100%;
 }
 
 .font-Bold {
@@ -68,8 +66,20 @@ body {
     margin-right: 40px!important;
 }
 
+.marginleft20px {
+    margin-left: 20px!important;
+}
+
+.marginright20px {
+    margin-right: 20px!important;
+}
+
 .absolute-position {
     position: absolute;
+}
+
+.fixed-position {
+    position: fixed;
 }
 
 .padding30pxleftright {
@@ -96,4 +106,23 @@ menu {
 
 .marginAuto {
     margin: auto;
+}
+
+.margin0px  {
+    margin: 0px!important;
+}
+
+.height70px {
+  height: 70px!important;
+}
+
+.bottom0px {
+  bottom: 0px!important;
+}
+
+.margin_10_10_0_10  {
+  margin-top: 10px !important;
+  margin-bottom: 0px !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
 }

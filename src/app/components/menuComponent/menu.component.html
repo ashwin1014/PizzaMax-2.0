@@ -1,61 +1,29 @@
-<nav>
-    <div class="nav-wrapper">
-        <div class="row">
-            <div class="col l3 s3 m3 marginAuto">
-                <a href="" class="marginleft10px"><img src="../../../images/pm-logo.png" alt="Pizza Max" class="logo-wrap" (click)="backToHome()"></a>
-            </div>
-            <div class="col l3 s3 m3 marginAuto" style="margin-top: 13px;" *ngIf="windowWidth > 600">
-                <a class="dottedBtn">
-                    <i class="fas fa-map-marker"></i>
-                    <span>{{location}}</span>
-                </a>
-            </div>
-            <div class="col l3 s3 m3">
-                <i class="fas fa-shopping-cart right" *ngIf="windowWidth > 600">
-                    <small class="notification-badge">{{cartCost | currency: 'INR':true}}</small>
-                </i>
-            </div>
-            <div class="col l3 s3 m3 right">
-                <i class="far fa-user">&nbsp;{{userName}}</i>
-            </div>
-        </div>
+<nav class="height70px marginbottom0px">
+    <div class="nav-wrapper red accent-2">
+        <a href="" class="marginleft10px"><img src="../../../images/pm-logo.png" alt="Pizza Max" class="logo-wrap" (click)="backToHome()"></a>
+        <ul id="nav-mobile" class="right">
+          <li><a class=" hide-on-med-and-down height70px">
+                <i class="material-icons tiny left">location_on</i>
+                <span>{{location}}</span>
+              </a>
+          </li>
+          <li><a class="hide-on-med-and-down height70px">
+              <span class="new badge cost-badge margin0px blue" data-badge-caption="">{{ cartCost | currency: 'INR':true}}</span>
+              <i class="material-icons tiny left marginleft10px">shopping_cart</i>
+            </a>
+          </li>
+          <li>
+              <a class="valign-wrapper height70px">
+                  <i class="material-icons tiny left">account_circle</i>
+                  <span>{{userName}}</span>
+              </a>
+          </li>
+        </ul>
     </div>
 </nav>
 <div class="container" id="menuContainer">
-    <!-- <table class="highlight" *ngIf="menu">
-        <thead>
-            <tr>
-                <th>
-                    <h5>Welcome to Pizzamax</h5>
-                </th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td>Alvin</td>
-                <td>{{menu.code}}</td>
-
-            </tr>
-            <tr>
-                <td>Alan</td>
-                <td>{{menu.name}}</td>
-
-            </tr>
-            <tr>
-                <td>Jonathan</td>
-                <td>{{menu.annualSalary}}</td>
-
-            </tr>
-        </tbody>
-    </table>
-
-    <div *ngIf="!menu" class="container card-panel grey lighten-5 z-depth-1">
-        {{statusMessage}}
-    </div> -->
-
     <div class="row">
-        <div class="col s6 m4 l4 xl4 ">
+        <div class="col s6 m6 l4 xl4">
             <div class="card">
                 <div class="card-image">
                     <img src="https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-food-lab-35-1500x1125.jpg">
@@ -63,12 +31,9 @@
                 <div class="card-content">
                     <span class="card-title center-align">Card Title</span>
                 </div>
-                <!-- <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div> -->
             </div>
         </div>
-        <div class="col s6 m4 l4 xl4">
+        <div class="col s6 m6 l4 xl4">
             <div class="card">
                 <div class="card-image">
                     <img src="https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-food-lab-35-1500x1125.jpg">
@@ -76,12 +41,9 @@
                 <div class="card-content">
                     <span class="card-title center-align">Card Title</span>
                 </div>
-                <!-- <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div> -->
             </div>
         </div>
-        <div class="col s6 m4 l4 xl4">
+        <div class="col s6 m6 l4 xl4">
             <div class="card">
                 <div class="card-image">
                     <img src="https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-food-lab-35-1500x1125.jpg">
@@ -90,12 +52,9 @@
                 <div class="card-content">
                     <span class="card-title center-align">Card Title</span>
                 </div>
-                <!-- <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div> -->
             </div>
         </div>
-        <div class="col s6 m4 l4 xl4">
+        <div class="col s6 m6 l4 xl4">
             <div class="card">
                 <div class="card-image">
                     <img src="https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-food-lab-35-1500x1125.jpg">
@@ -104,12 +63,9 @@
                 <div class="card-content">
                     <span class="card-title center-align">Card Title</span>
                 </div>
-                <!-- <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div> -->
             </div>
         </div>
-        <div class="col s6 m4 l4 xl4">
+        <div class="col s6 m6 l4 xl4">
             <div class="card">
                 <div class="card-image">
                     <img src="https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-food-lab-35-1500x1125.jpg">
@@ -118,12 +74,9 @@
                 <div class="card-content">
                     <span class="card-title center-align">Card Title</span>
                 </div>
-                <!-- <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div> -->
             </div>
         </div>
-        <div class="col s6 m4 l4 xl4">
+        <div class="col s6 m6 l4 xl4">
             <div class="card">
                 <div class="card-image">
                     <img src="https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-food-lab-35-1500x1125.jpg">
@@ -132,12 +85,9 @@
                 <div class="card-content">
                     <span class="card-title center-align">Card Title</span>
                 </div>
-                <!-- <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div> -->
             </div>
         </div>
-        <div class="col s6 m4 l4 xl4">
+        <div class="col s6 m6 l4 xl4">
             <div class="card">
                 <div class="card-image">
                     <img src="https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-food-lab-35-1500x1125.jpg">
@@ -146,32 +96,31 @@
                 <div class="card-content">
                     <span class="card-title center-align">Card Title</span>
                 </div>
-                <!-- <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div> -->
             </div>
         </div>
     </div>
-    <div class="row">&nbsp;</div>
 </div>
 
-<div *ngIf="windowWidth < 600" id="mobileBottomLocationNav">
-    <i class="fas fa-map-marker"></i>
-    <span>{{location}}</span>
-</div>
-<div *ngIf="windowWidth < 600" id="mobileBottomNav">
-    <div class="container">
-        <div class="col l6 s6 m6 left">
-            <i class="fas fa-shopping-cart">
-             <small class="notification-badge">{{cartCost | currency: 'INR':true}}</small>
-            </i>
+
+<div class="hide-on-large-only white-text container margin0px red accent-2 fixed-position bottom0px width100per" id="mobileBottomNav">
+    <div class="row margin_10_10_0_10 center-align" id="mobileBottomLocationNav">
+      <i class="material-icons tiny">location_on</i>
+      <span>{{location}}</span>
+    </div>
+    <div class="row valign-wrapper marginbottom0px height70px">
+        <div class="col l6 s6 m6 valign-wrapper">
+          <i class="material-icons marginleft20px">shopping_cart</i>
+          <span class="margin0px new badge blue" data-badge-caption="">{{cartCost | currency: 'INR':true}}</span>
+        </div>
+        <div class="col l6 s6 m6 red accent-1 marginright20px">
+            <a class="btn waves-effect waves-light transparent z-depth-0 width100per padding0px">go to cart
+              <i class="material-icons right">send</i>
+            </a>
         </div>
     </div>
-    <div class="col l6 s6 m6 right">
-        <button class="btn waves-effect waves-light transparent z-depth-0 top10px" type="submit" name="action">Go to cart
-           <i class="material-icons right">send</i>
-       </button>
-    </div>
 </div>
-<!-- Import Footer -->
 <footer></footer>
+<div class="hide-on-large-only">
+  <div class="row margin_10_10_0_10"></div>
+  <div class="row height70px"></div>
+</div>
