@@ -1,0 +1,36 @@
+.dottedBtn {
+    border: 1px dashed #FFF;
+    color: #FFF;
+}
+
+.notification-badge {
+    position: relative;
+    right: 3.7em;
+    top: 15px;
+    color: #ffffff;
+    background-color: #2eabff;
+    border-radius: 40px;
+    padding: 3px 20px;
+}
+
+#mobileBottomNav {
+    z-index: 9;
+}
+
+.cost-badge {
+    position: absolute;
+    bottom: 5px;
+}
+
+span.badge.new {
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 12px;
+}
+
+span.badge.new::first-letter {
+    padding-right: 0.3em;
+}

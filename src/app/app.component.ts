@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-
-
 declare var $: any; // for jQuery
 
 @Component({
-  selector: 'my-app',
-  templateUrl: `app/app.component.html`,
-  styleUrls: ['app/app.component.css'],
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {}

@@ -1,0 +1,129 @@
+<nav class="height70px marginbottom0px">
+    <div class="nav-wrapper red accent-2">
+        <a href="" class="marginleft10px"><img [src]="'assets/images/pm-logo.png'" alt="Pizza Max" class="logo-wrap" (click)="backToHome()"></a>
+        <ul id="nav-mobile" class="right">
+            <li>
+                <a class=" hide-on-med-and-down height70px">
+                    <i class="material-icons tiny left">location_on</i>
+                    <span>{{location}}</span>
+                </a>
+            </li>
+            <li>
+                <a class="hide-on-med-and-down height70px">
+                    <span class="new badge cost-badge margin0px blue" data-badge-caption="">{{ cartCost | currency: 'INR':true}}</span>
+                    <i class="material-icons tiny left marginleft10px">shopping_cart</i>
+                </a>
+            </li>
+            <li>
+                <a class="valign-wrapper height70px">
+                    <i class="material-icons tiny left">account_circle</i>
+                    <span>{{userName}}</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="center-align text-large-2 margintop20px">Sections</div>
+<div class="container margintop20px">
+    <div class="row">
+        <div class="col s6 m6 l4 xl4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-food-lab-35-1500x1125.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title center-align">Card Title</span>
+                </div>
+            </div>
+        </div>
+        <div class="col s6 m6 l4 xl4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-food-lab-35-1500x1125.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title center-align">Card Title</span>
+                </div>
+            </div>
+        </div>
+        <div class="col s6 m6 l4 xl4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-food-lab-35-1500x1125.jpg">
+
+                </div>
+                <div class="card-content">
+                    <span class="card-title center-align">Card Title</span>
+                </div>
+            </div>
+        </div>
+        <div class="col s6 m6 l4 xl4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-food-lab-35-1500x1125.jpg">
+
+                </div>
+                <div class="card-content">
+                    <span class="card-title center-align">Card Title</span>
+                </div>
+            </div>
+        </div>
+        <div class="col s6 m6 l4 xl4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-food-lab-35-1500x1125.jpg">
+
+                </div>
+                <div class="card-content">
+                    <span class="card-title center-align">Card Title</span>
+                </div>
+            </div>
+        </div>
+        <div class="col s6 m6 l4 xl4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-food-lab-35-1500x1125.jpg">
+
+                </div>
+                <div class="card-content">
+                    <span class="card-title center-align">Card Title</span>
+                </div>
+            </div>
+        </div>
+        <div class="col s6 m6 l4 xl4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-food-lab-35-1500x1125.jpg">
+
+                </div>
+                <div class="card-content">
+                    <span class="card-title center-align">Card Title</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="hide-on-large-only white-text  margin0px red accent-2 fixed-position bottom0px width100per" id="mobileBottomNav">
+    <div class="row margin_10_10_0_10 center-align" id="mobileBottomLocationNav">
+        <i class="material-icons tiny">location_on</i>
+        <span>{{location}}</span>
+    </div>
+    <div class="row valign-wrapper marginbottom0px height70px">
+        <div class="col l6 s6 m6 valign-wrapper">
+            <i class="material-icons marginleft20px">shopping_cart</i>
+            <span class="margin0px new badge blue" data-badge-caption="">{{cartCost | currency: 'INR':true}}</span>
+        </div>
+        <div class="col l6 s6 m6 red accent-1 marginright20px">
+            <a class="btn waves-effect waves-light transparent z-depth-0 width100per padding0px">go to cart
+              <i class="material-icons right">send</i>
+            </a>
+        </div>
+    </div>
+</div>
+<app-footer-component></app-footer-component>
+<div class="hide-on-large-only">
+    <div class="row margin_10_10_0_10"></div>
+    <div class="row height70px"></div>
+</div>
