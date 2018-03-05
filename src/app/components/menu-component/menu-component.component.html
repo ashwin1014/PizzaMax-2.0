@@ -1,13 +1,17 @@
 <nav class="height70px marginbottom0px">
     <div class="nav-wrapper red accent-2">
-        <a href="" class="marginleft10px"><img [src]="'assets/images/pm-logo.png'" alt="Pizza Max" class="logo-wrap" (click)="backToHome()"></a>
+        <a href="" class="marginleft10px left"><img [src]="'assets/images/pm-logo.png'" alt="Pizza Max" class="logo-wrap" (click)="backToHome()"></a>
+        <ul class="brand-logo center">
+          <li>
+              <a class=" hide-on-med-and-down height70px dotted-border">
+                <div class="">
+                  <i class="material-icons tiny left">location_on</i>
+                  <span>{{location}}</span>
+                </div>
+              </a>
+          </li>
+        </ul>
         <ul id="nav-mobile" class="right">
-            <li>
-                <a class=" hide-on-med-and-down height70px">
-                    <i class="material-icons tiny left">location_on</i>
-                    <span>{{location}}</span>
-                </a>
-            </li>
             <li>
                 <a class="hide-on-med-and-down height70px">
                     <span class="new badge cost-badge margin0px blue" data-badge-caption="">{{ cartCost | currency: 'INR':true}}</span>
