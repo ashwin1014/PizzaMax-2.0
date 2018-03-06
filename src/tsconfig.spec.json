@@ -1,6 +1,10 @@
 {
     "extends": "../tsconfig.json",
     "compileOnSave": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": true,
     "compilerOptions": {
         "outDir": "../out-tsc/spec",
         "baseUrl": "./",

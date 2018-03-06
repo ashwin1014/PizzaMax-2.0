@@ -4,9 +4,15 @@
         "ettumanoor",
         "kerala",
         "kottayam",
+        "marginbottom",
+        "marginleft",
+        "marginright",
+        "margintop",
         "munnar",
         "polyfill",
         "thekkady",
-        "varkala"
+        "valign",
+        "varkala",
+        "wrapper"
     ]
 }

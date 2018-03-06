@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {Routes, RouterModule} from '@angular/router';
-import {HttpModule} from '@angular/http';
-import {FormsModule} from '@angular/forms';
+import { Routes, RouterModule } from '@angular/router';
+import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 
 // Custom components
 import { AppComponent } from './app.component';
@@ -14,30 +14,16 @@ import { NavbarComponent } from './components/navbar-component/navbar-component.
 import { OffersComponent } from './components/offers-component/offers-component.component';
 import { PageNotFound } from  './components/page-not-found/page-not-found.component';
 import { MenuService } from  './components/menu-component/menu.service';
+import { CommonNavbarComponent } from './components/common-navbar/common-navbar.component';
 
 // Declare Routes
 
 const appRoutes: Routes = [
-  {
-    path: '',
-    component: HomeComponent
-  }, {
-    path: 'menu/:location',
-    component: MenuComponent,
-    children: [
-      {
-        path: 'cart',
-        component: CartComponent
-      }
-    ]
-  }, {
-    path: '',
-    redirectTo: '',
-    pathMatch: 'full'
-  }, {
-    path: '**',
-component : PageNotFound
-  }
+  { path: '', component: HomeComponent},
+  { path: 'menu/:location', component: MenuComponent},
+  { path: 'cart', component: CartComponent},
+  { path: '', redirectTo: '', pathMatch: 'full'},
+  {path: '**', component : PageNotFound }
 ];
 
 
@@ -50,7 +36,8 @@ component : PageNotFound
     MenuComponent,
     NavbarComponent,
     OffersComponent,
-    PageNotFound
+    PageNotFound,
+    CommonNavbarComponent
   ],
   imports: [
     BrowserModule,
