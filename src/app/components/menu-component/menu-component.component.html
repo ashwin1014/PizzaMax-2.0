@@ -1,46 +1,43 @@
-<!-- <nav class="height70px marginbottom0px">
-    <div class="nav-wrapper red accent-2">
-        <a href="" class="marginleft10px"><img [src]="'assets/images/pm-logo.png'" alt="Pizza Max" class="logo-wrap" (click)="backToHome()"></a>
-        <ul id="nav-mobile" class="right">
-            <li>
-                <a class=" hide-on-med-and-down height70px">
-                    <i class="material-icons tiny left">location_on</i>
-                    <span>{{location}}</span>
-                </a>
-            </li>
-            <li>
-                <a class="hide-on-med-and-down height70px">
-                    <span class="new badge cost-badge margin0px blue" data-badge-caption="">{{ cartCost | currency: 'INR':true}}</span>
-                    <i class="material-icons tiny left marginleft10px">shopping_cart</i>
-                </a>
-            </li>
-            <li>
-                <a class="valign-wrapper height70px">
-                    <i class="material-icons tiny left">account_circle</i>
-                    <span>{{userName}}</span>
-                </a>
-            </li>
+<app-common-navbar></app-common-navbar>
+<div class="center-align text-large-2 margintop20px row">
+    <div class="col m3"></div>
+    <div class="col m3 paddingRight0px">
+        <select [(ngModel)]="selectedCategory" name="food" class="browser-default" placeholder="Favorite food" (ngModelChange)="onSelect(selectedCategory)">
+            <option value=""  selected disabled hidden>Select Item</option>
+            <option *ngFor="let foodCategory of foodCategories" [value]="foodCategory">
+                    {{foodCategory}} 
+            </option>
+        </select>
+    </div>
+    <div class="col m3 paddingLeft0px">
+        <a id="filterBtn" class='dropdown-button btn width100per red accent-2 z-depth-0' href='#' data-activates='filter-dropdown'>Filters
+             <i class="material-icons right">filter_list</i>
+        </a>
+        <ul id='filter-dropdown' class='dropdown-content'>
+            <li><a href="#!">Veg</a></li>
+            <li><a href="#!">Non Veg</a></li>
+            <li class="divider"></li>
         </ul>
     </div>
-</nav> -->
-<app-common-navbar></app-common-navbar>
-<div class="center-align text-large-2 margintop20px">Sections</div>
+</div>
+
+
 <div class="container margintop20px">
     <div class="row">
-        <div class="col s6 m6 l4 xl4" *ngFor="let menuCategory of menuCategories">
+        <div class="col s6 m6 l4 xl4" *ngFor="let x of selectedFood">
             <div class="card">
                 <div class="card-image">
-                    <img src={{menuCategory.ImagePath}}>
+                    <img src={{x?.ImagePath}}>
                 </div>
                 <div class="card-content">
-                    <span class="card-title center-align"><a class="btn waves-effect waves-light transparent z-depth-0 blue-text text-darken-2">{{menuCategory.category}}</a></span>
+                    <span class="card-title center-align"><a class="btn waves-effect waves-light transparent z-depth-0 blue-text text-darken-2">{{x?.item}}</a></span>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-
+<!--for Mobile View only-->
 <div class="hide-on-large-only white-text  margin0px red accent-2 fixed-position bottom0px width100per" id="mobileBottomNav">
     <div class="row margin_10_10_0_10 center-align" id="mobileBottomLocationNav">
         <i class="material-icons tiny">location_on</i>
