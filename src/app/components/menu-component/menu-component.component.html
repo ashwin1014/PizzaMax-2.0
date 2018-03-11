@@ -1,11 +1,12 @@
 <app-common-navbar></app-common-navbar>
+
 <div class="center-align text-large-2 margintop20px row">
     <div class="col m3"></div>
     <div class="col m3 paddingRight0px">
         <select [(ngModel)]="selectedCategory" name="food" class="browser-default" placeholder="Favorite food" (ngModelChange)="onSelect(selectedCategory)">
             <option value=""  selected disabled hidden>Select Item</option>
             <option *ngFor="let foodCategory of foodCategories" [value]="foodCategory">
-                    {{foodCategory}} 
+                    {{foodCategory}}
             </option>
         </select>
     </div>
@@ -21,6 +22,8 @@
     </div>
 </div>
 
+
+<div class="center-align text-large-2 margintop20px">Sections</div>
 
 <div class="container margintop20px">
     <div class="row">

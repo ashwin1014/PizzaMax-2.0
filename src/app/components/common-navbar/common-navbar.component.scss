@@ -1,0 +1,22 @@
+.dottedBtn {
+    border: 1px dashed #FFF;
+    color: #FFF;
+}
+
+.cost-badge {
+    position: absolute;
+    bottom: 5px;
+}
+
+span.badge.new {
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 12px;
+}
+
+span.badge.new::first-letter {
+    padding-right: 0.3em;
+}
