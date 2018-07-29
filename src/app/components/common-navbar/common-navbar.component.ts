@@ -33,4 +33,10 @@ this
   .navigate(['']);
 }
 
+backToHome() {
+  this
+    .router
+    .navigate(['']);
+}
+
 }
