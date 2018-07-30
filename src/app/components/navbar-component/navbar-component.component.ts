@@ -12,8 +12,7 @@ export class NavbarComponent {
     { value: '1', viewValue: 'Munnar' },
     { value: '2', viewValue: 'Kottayam' },
     { value: '3', viewValue: 'Ettumanoor' },
-    { value: '4', viewValue: 'Thekkady' },
-    { value: '5', viewValue: 'Varkala' }
+    { value: '4', viewValue: 'Thekkady' }
   ];
   onChange() {
    document.getElementById('btnSubmitDiv').classList.remove('notAllowed');
