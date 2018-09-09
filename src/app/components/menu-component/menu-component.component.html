@@ -1,8 +1,8 @@
 <app-common-navbar></app-common-navbar>
 
 <div class="center-align text-large-2 margintop20px row">
-    <div class="col m3"></div>
-    <div class="col m3 paddingRight0px">
+    <div class="col m4"></div>
+    <div class="col m4 paddingRight0px">
         <select [(ngModel)]="selectedCategory" name="food" class="browser-default" placeholder="Favorite food" (ngModelChange)="onSelect(selectedCategory)">
             <option value=""  selected disabled hidden>Select Item</option>
             <option *ngFor="let foodCategory of foodCategories" [value]="foodCategory">
@@ -10,7 +10,7 @@
             </option>
         </select>
     </div>
-    <div class="col m3 paddingLeft0px">
+    <!-- <div class="col m3 paddingLeft0px">
         <a id="filterBtn" class='dropdown-button btn width100per red accent-2 z-depth-0' href='#' data-activates='filter-dropdown'>Filters
              <i class="material-icons right">filter_list</i>
         </a>
@@ -19,7 +19,7 @@
             <li><a href="#!">Non Veg</a></li>
             <li class="divider"></li>
         </ul>
-    </div>
+    </div> -->
 </div>
 
 
@@ -46,8 +46,9 @@
     <div class="row margin_10_10_0_10 center-align" id="mobileBottomLocationNav">
         <i class="material-icons tiny">location_on</i>
         <span>{{location}}</span>
+        <i class="material-icons tiny">arrow_drop_down</i>
     </div>
-    <div class="row valign-wrapper marginbottom0px height70px">
+    <!-- <div class="row valign-wrapper marginbottom0px height70px">
         <div class="col l6 s6 m6 valign-wrapper">
             <i class="material-icons marginleft20px">shopping_cart</i>
             <span class="margin0px new badge blue" data-badge-caption="">{{cartCost | currency: 'INR':true}}</span>
@@ -57,10 +58,10 @@
               <i class="material-icons right">send</i>
             </a>
         </div>
-    </div>
+    </div> -->
 </div>
 <app-footer-component></app-footer-component>
 <div class="hide-on-large-only">
     <div class="row margin_10_10_0_10"></div>
-    <div class="row height70px"></div>
+    <div class="row height0px"></div>
 </div>
