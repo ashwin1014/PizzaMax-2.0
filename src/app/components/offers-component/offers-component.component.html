@@ -3,8 +3,8 @@
     <div class="row">
         <div class="col s12 m4 l4 xl4" *ngFor="let offer of offers">
             <div class="card">
-                <div class="card-image">
-                    <img src={{offer.ImagePath}} />
+                <div class="card-image progressive">
+                    <img class="lazy" src={{offer.ImagePath}} />
                     <span class="card-title red padding10px margin10px">{{offer.title}}</span>
                 </div>
                 <div class="card-content">

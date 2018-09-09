@@ -288,7 +288,7 @@ foodData = [
     // with the service. Please try again later!';
     // console.error(error);                  }); }
 
-    const pizzaLocation : string = this.route.snapshot.params['location'];
+    const pizzaLocation: string = this.route.snapshot.params['location'];
     this
       ._menuService
       .getMenuByLocation(pizzaLocation)
@@ -304,8 +304,8 @@ foodData = [
       });
 
     // check url
-    this.href = this.router.url;
-    console.log(this.router.url);
+    // this.href = this.router.url;
+    // console.log(this.router.url);
   }
 
   backToHome() {
