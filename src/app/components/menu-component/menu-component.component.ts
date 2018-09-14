@@ -18,17 +18,21 @@ export class MenuComponent implements OnInit {
   // public hideCart: boolean = true; public hideRouter: boolean = false;
   public href: string = '';
 
-  selectedCategory: string = ``; // model name
+  selectedCategory: string = 'All sections'; // model name
   selectedFood;
   foodCategories = [
-    'Appetizers',
-    'Max Pasta',
-    'Pizza',
-    'Meals',
-    'Salads',
-    'Beverages',
-    'Sides',
-    'Desserts'
+    { sectionName : 'All sections' },
+    { sectionName : 'Appetizers' },
+    { sectionName : 'Max Pasta' },
+    { sectionName : 'Pizza' },
+    { sectionName : 'Family Meals' },
+    { sectionName : 'Individual Meals' },
+    { sectionName : 'Happy Kids Meals' },
+    { sectionName : 'Salads' },
+    { sectionName : 'Crispy Chicken' },
+    { sectionName : 'Hot Crispy Burgers' },
+    { sectionName : 'Beverages' },
+    { sectionName : 'Sides' },
   ];
 
 foodData = [
@@ -37,7 +41,7 @@ foodData = [
     ImagePath: 'https://mrhyde.imgix.net/app/uploads/2017/02/19141103/the-best-national-pizza-da' +
         'y-offers-in-london-613x409.png?w=1200&h=1&q=90&fit=max&auto=format',
     item: 'Pizza Max Special',
-    description: 'awesome pizza!',
+    description: 'A Combination of Pepperoni, chicken sausage,fresh onion, green pepper , mushroom and black olives spread over a delicious base of pizza',
     isVeg: false
   }, {
     category: 'Pizza',
@@ -47,7 +51,7 @@ foodData = [
     description: 'awesome pizza!',
     isVeg: false
   }, {
-    category: 'Pizza',
+    category: 'All sections',
     ImagePath: 'https://mrhyde.imgix.net/app/uploads/2017/02/19141103/the-best-national-pizza-da' +
         'y-offers-in-london-613x409.png?w=1200&h=1&q=90&fit=max&auto=format',
     item: 'Garlic Bread',
@@ -238,42 +242,7 @@ foodData = [
   }
 
   constructor(private route: ActivatedRoute, private router: Router, private _menuService: MenuService) {
-    this.selectedFood = this.foodData;
-    // this.menuCategories = [
-    //   {
-    //     category: 'Appetizers',
-    //     ImagePath: 'https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-foo' +
-    //         'd-lab-35-1500x1125.jpg'
-    //   }, {
-    //     category: 'Max Pasta',
-    //     ImagePath: 'https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-foo' +
-    //         'd-lab-35-1500x1125.jpg'
-    //   }, {
-    //     category: 'Our Speciality Pizza',
-    //     ImagePath: 'https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-foo' +
-    //         'd-lab-35-1500x1125.jpg'
-    //   }, {
-    //     category: 'Meals',
-    //     ImagePath: 'https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-foo' +
-    //         'd-lab-35-1500x1125.jpg'
-    //   }, {
-    //     category: 'Salads',
-    //     ImagePath: 'https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-foo' +
-    //         'd-lab-35-1500x1125.jpg'
-    //   }, {
-    //     category: 'Beverages',
-    //     ImagePath: 'https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-foo' +
-    //         'd-lab-35-1500x1125.jpg'
-    //   }, {
-    //     category: 'Sides',
-    //     ImagePath: 'https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-foo' +
-    //         'd-lab-35-1500x1125.jpg'
-    //   }, {
-    //     category: 'Desserts',
-    //     ImagePath: 'https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-foo' +
-    //         'd-lab-35-1500x1125.jpg'
-    //   }
-    // ];
+
 
   }
 

@@ -1,12 +1,11 @@
 <app-common-navbar></app-common-navbar>
 
 <div class="center-align text-large-2 margintop20px row">
-    <div class="col m4"></div>
-    <div class="col m4 paddingRight0px">
+    <div class="col m4 s2"></div>
+    <div class="col m4 s8 paddingRight0px">
         <select [(ngModel)]="selectedCategory" name="food" class="browser-default" placeholder="Favorite food" (ngModelChange)="onSelect(selectedCategory)">
-            <option value=""  selected disabled hidden>Select Item</option>
-            <option *ngFor="let foodCategory of foodCategories" [value]="foodCategory">
-                    {{foodCategory}}
+            <option *ngFor="let foodCategory of foodCategories" [value]="foodCategory.sectionName">
+                    {{foodCategory.sectionName}}
             </option>
         </select>
     </div>
@@ -23,21 +22,36 @@
 </div>
 
 
-<div class="center-align text-large-2 margintop20px">{{selectedCategory}}</div>
+<!-- <div class="center-align text-large-2 margintop20px">{{selectedCategory}}</div> -->
 
 <div class="container margintop20px">
     <div class="row">
-        <div class="col s6 m6 l4 xl4" *ngFor="let x of selectedFood">
-            <div class="card small">
+      <ng-container *ngIf="selectedCategory != 'All sections'">
+        <div class="col s12 m6 l6 xl4" *ngFor="let x of selectedFood">
+            <div class="card medium sticky-action">
                 <div class="card-image progressive">
                     <img class="lazy" src={{x?.ImagePath}}>
                 </div>
-                <div class="card-content">
-                    <span class="card-title center-align"><a class="btn waves-effect waves-light transparent z-depth-0 blue-text text-darken-2">{{x?.item}}</a></span>
-                    <span class="blue-text center-align">{{x?.description}}</span>
+                <div class="card-content activator">
+                    <span class="card-title activator center-align grey-text text-darken-4">{{x?.item}}</span>
+                    <span class="center-align activator">{{x?.description}}</span>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">{{x?.item}}<i class="material-icons right">close</i></span>
+                  <p>{{x?.description}}</p>
+                </div>
+                <div class="card-action">
+
+                  <i class="material-icons {{x?.isVeg?'green-text':'red-text'}}">
+                    center_focus_strong
+                  </i>
                 </div>
             </div>
         </div>
+      </ng-container>
+      <ng-container *ngIf="selectedCategory == 'All sections'">
+        Hello
+      </ng-container>
     </div>
 </div>
 
