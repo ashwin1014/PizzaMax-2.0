@@ -45,12 +45,22 @@
                   <i class="material-icons {{x?.isVeg?'green-text':'red-text'}}">
                     center_focus_strong
                   </i>
+                  <span class="right" *ngIf="x?.prices != null" [innerHTML]="x?.prices.map(priceMapper).join('\t\t\t')"></span>
                 </div>
             </div>
         </div>
       </ng-container>
       <ng-container *ngIf="selectedCategory == 'All sections'">
-        Hello
+        <ng-container *ngFor="let x of allSections()">
+        <div class="col s12 m6 l6 xl4" *ngIf="!x?.excludeLocations?.includes(location)">
+          <div class="card">
+              <div class="card-image progressive height215px" (click)="onSelect(x?.sectionName)">
+                  <img class="lazy" src={{x?.ImagePath}}>
+                  <span class="card-title white black-text padding10px margin10px">{{x?.sectionName}}</span>
+              </div>
+          </div>
+        </div>
+        </ng-container>
       </ng-container>
     </div>
 </div>

@@ -12,24 +12,17 @@ offers: Object[];
 constructor() {
   this.offers = [
     {
-      title: 'Title1',
-      ImagePath: 'https://mymodernmet.com/wp/wp-content/uploads/2017/09/albert-dros-landscape-phot' +
-          'ography-tips-3.jpg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed sapien in tor' +
-          'tor facilisis dignissim.'
+      title: 'Pizza Max Special',
+      ImagePath: 'https://firebasestorage.googleapis.com/v0/b/pizzamax-website-data.appspot.com/o/PizzaMaxSpecial.jpeg?alt=media&token=c7a89408-197d-444e-8545-bbfe471a8256',
+      description: 'A Combination of Pepperoni, chicken sausage,fresh onion, green pepper, mushroom and black olives spread over a delicious base of pizza'
     }, {
-      title: 'Title2',
-      ImagePath: 'https://media.istockphoto.com/photos/misty-summer-mountain-hills-landscape-pictu' +
-          're-id509636590?k=6&m=509636590&s=612x612&w=0&h=0n261AbJgmWI5cUWLUwpcRAbuGfmbWPF4' +
-          '4tvPvErZXA=',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed sapien in tor' +
-          'tor facilisis dignissim.'
+      title: 'Hot & Spicy Chicken',
+      ImagePath: 'https://firebasestorage.googleapis.com/v0/b/pizzamax-website-data.appspot.com/o/hot-n-spicy-chicken.jpeg?alt=media&token=eae71c68-a57d-4306-a9b4-a53f56909a06',
+      description: 'A spicy flavour of seasoned chicken topped with green peppers, jalapenos and red onions'
     }, {
-      title: 'Title3',
-      ImagePath: 'https://img.apmcdn.org/6c7afe284089915c9e2305322faa29ba8878c4d5/uncropped/81f186' +
-          '-20151012-thomas-cole-the-oxbow-landscape-painting.jpg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed sapien in tor' +
-          'tor facilisis dignissim.'
+      title: 'Max Veggie',
+      ImagePath: 'https://firebasestorage.googleapis.com/v0/b/pizzamax-website-data.appspot.com/o/max-veggie.jpeg?alt=media&token=4f6a6137-dc55-40b3-9a40-a860f018aba6',
+      description: 'A combination of fresh vegetable (Onion, green pepper black olives,mushroom and tomato) topped with our own special fajitha sauce'
     }
   ];
 } // end constructor
