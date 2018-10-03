@@ -8,9 +8,10 @@ declare var $: any; // for jQuery
 })
 export class OffersComponent implements OnInit {
 offers: Object[];
+recommended: Object[];
 
 constructor() {
-  this.offers = [
+  this.recommended = [
     {
       title: 'Pizza Max Special',
       ImagePath: 'https://firebasestorage.googleapis.com/v0/b/pizzamax-website-data.appspot.com/o/PizzaMaxSpecial.jpeg?alt=media&token=c7a89408-197d-444e-8545-bbfe471a8256',
@@ -25,7 +26,20 @@ constructor() {
       description: 'A combination of fresh vegetable (Onion, green pepper black olives,mushroom and tomato) topped with our own special fajitha sauce'
     }
   ];
-} // end constructor
+
+  this.offers = [
+    {
+      title: 'Buy 1 Get 1',
+      ImagePath: 'https://firebasestorage.googleapis.com/v0/b/pizzamax-website-data.appspot.com/o/OFFER.jpg?alt=media&token=12006e28-b241-4206-be4e-e8570618c1f1',
+      description: 'Buy a medium pizza and get a free medium pizza free. The free pizza should be of same or lesser value.'
+      + '<br><br>Offer availble only on Mondays and Thursdays.'
+      + '<br><br><span class="chip blue white-text">Kottayam</span>'
+      + '<span class="chip blue white-text">Ettumanoor</span> branches only'
+    }
+  ]
+
+
+}
 
 ngOnInit() {
 }
