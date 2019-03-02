@@ -168,3 +168,32 @@ menu {
   width: auto!important;
   overflow: hidden!important;
 }
+
+.modal {
+   max-height: 100%!important;
+}
+
+@media only screen and (min-width:481px) {
+  .offer-image {
+    width: 100%!important;
+    display: inline!important;
+  }
+}
+@media only screen and (min-width:641px) {
+  .offer-image {
+    width: 50%!important;
+    display: inline!important;
+  }
+}
+@media only screen and (min-width:961px) {
+  .offer-image {
+    width: 50%!important;
+    display: inline!important;
+  }
+}
+@media only screen and (min-width:1025px) {
+  .offer-image {
+    width: 50%!important;
+    display: inline!important;
+  }
+}
